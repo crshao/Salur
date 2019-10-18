@@ -1,9 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/Login"
     tools:context=".LoginActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/Salur"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="270dp"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:text="Nama Pengguna"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro_bold" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/nama"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/kata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/username"
+        android:fontFamily="@font/source_sans_pro_extralight"
+        android:text="Kata Sandi"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro_bold"
+        />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/kata"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/masuk"
+        android:layout_marginTop="20dp"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:background="@drawable/Masuk"
+        android:layout_below="@id/pass"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:text="Masuk"
+        android:textSize="20dp"
+        android:paddingBottom="8dp"
+        android:textColor="#03658C"
+        android:textAllCaps="false"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/masuk"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/source_sans_pro_extralight"
+        android:text="Belum punya akun?                             "
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@color/trans"
+        android:text="Buat sekarang"
+        android:textSize="18dp"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:layout_below="@id/masuk"
+        android:layout_marginTop="-2.5dp"
+        android:layout_marginLeft="228dp"
+        />
+</RelativeLayout>
