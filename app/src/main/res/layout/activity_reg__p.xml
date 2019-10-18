@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Login"
+    tools:context=".Reg_P">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/Salur"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar sebagai panti"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-10dp"
+        />
+
+    <TextView
+        android:id="@+id/pnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="270dp"
+        android:fontFamily="@font/source_sans_pro_extralight"
+        android:text="Nama Panti"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro_bold"
+        />
+
+    <EditText
+        android:id="@+id/pname"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/pnama"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/Puser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/pname"
+        android:fontFamily="@font/source_sans_pro_extralight"
+        android:text="Nama Pengguna"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro_bold"
+        />
+
+    <EditText
+        android:id="@+id/pusername"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/Puser"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/pmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/pusername"
+        android:fontFamily="@font/source_sans_pro_extralight"
+        android:text="Alamat E-mail"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro_bold"
+        />
+
+    <EditText
+        android:id="@+id/pemail"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/pmail"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/ppass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/pemail"
+        android:fontFamily="@font/source_sans_pro_extralight"
+        android:text="Kata Sandi"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro_bold"
+        />
+
+    <EditText
+        android:id="@+id/ppassword"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/ppass"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_marginTop="20dp"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:background="@drawable/Masuk"
+        android:layout_below="@id/ppassword"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:text="Daftar"
+        android:textSize="20dp"
+        android:paddingBottom="8dp"
+        android:textColor="#03658C"
+        android:textAllCaps="false"
+        />
+
+</RelativeLayout>

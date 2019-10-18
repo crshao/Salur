@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Login"
+    tools:context=".Reg_P2">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/Salur"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/un"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:text="Unggah KTP pengurus panti"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/un2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Berkas diunggah dalam bentuk .jpg"
+        android:textColor="@color/white"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:layout_below="@id/un"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/pic"
+        android:layout_width="277dp"
+        android:layout_height="197dp"
+        android:background="@drawable/lan"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/un2"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_marginTop="70dp"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:background="@drawable/Masuk"
+        android:layout_below="@id/pic"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:text="Daftar"
+        android:textSize="20dp"
+        android:paddingBottom="8dp"
+        android:textColor="#03658C"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/next"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/source_sans_pro_extralight"
+        android:text="*Berkas akan diverifikasi dalam 24 jam"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
