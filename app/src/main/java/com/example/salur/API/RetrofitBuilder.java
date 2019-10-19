@@ -14,7 +14,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitBuilder {
     private static final String TAG = "RetrofitBuilder"; //DEBUG TAG
-    private static final String BASE_URL = "http://192.168.4.1/salur/public/index.php/api/";
+    private static final String BASE_URL = "http://192.168.43.218/salur/public/index.php/api/";
 
     private final static OkHttpClient client = buildClient();
     private final static Retrofit retrofit = buildRetrofit(client);
