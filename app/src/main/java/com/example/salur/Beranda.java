@@ -26,8 +26,8 @@ public class Beranda extends Fragment {
 
     private static final String TAG ="Beranda";
 
-//    @BindView(R.id.gerak)
-//    TextView xD;
+    @BindView(R.id.gerak)
+    TextView xD;
 
 
 
@@ -37,7 +37,7 @@ public class Beranda extends Fragment {
         View view = inflater.inflate(R.layout.activity_beranda,container,false);
         ButterKnife.bind(this,view);
 
-//        xD.setSelected(true);
+        xD.setSelected(true);
         return view;
     }
 }
