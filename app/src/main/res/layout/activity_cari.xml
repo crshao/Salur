@@ -23,56 +23,78 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
         />
-    <ImageView
-        android:id="@+id/blue"
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="115dp"
-        android:layout_below="@id/top"
-        android:background="@color/blue"
-        />
-
-    <TextView
-        android:id="@+id/mulai"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mulai dari yang dekat"
-        android:fontFamily="@font/source_sans_pro_bold"
-        android:textSize="30dp"
-        android:textColor="#1F272A"
         android:layout_below="@id/top"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="30dp"
-        />
+        >
 
-    <ImageView
-        android:id="@+id/search"
-        android:layout_width="357dp"
-        android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/mulai"
-        android:background="@drawable/search"
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        />
 
-    <Button
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:background="@drawable/mag"
-        android:layout_below="@id/mulai"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="340dp"
-        />
-    
-    <EditText
-        android:layout_width="290dp"
-        android:layout_height="40dp"
-        android:layout_below="@id/mulai"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="5dp"
-        android:hint="@string/hint1"
-        android:fontFamily="@font/source_sans_pro_extralight"
-        android:textSize="15dp"
-        android:backgroundTint="@color/trans"/>
+            <ImageView
+                android:id="@+id/blue"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:background="@color/blue"
+                />
+
+            <TextView
+                android:id="@+id/mulai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mulai dari yang dekat"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:textSize="30dp"
+                android:textColor="#1F272A"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                />
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="357dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/mulai"
+                android:background="@drawable/search"
+
+                />
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/mag"
+                android:layout_below="@id/mulai"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="340dp"
+                />
+
+            <EditText
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/mulai"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                android:hint="@string/hint1"
+                android:fontFamily="@font/source_sans_pro_extralight"
+                android:textSize="15dp"
+                android:backgroundTint="@color/trans"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_bold"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
 
 
 </RelativeLayout>

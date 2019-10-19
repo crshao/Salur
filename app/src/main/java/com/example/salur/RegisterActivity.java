@@ -11,9 +11,9 @@ import butterknife.OnClick;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    @BindView(R.id.panti)
+    @BindView(R.id.pan)
     Button panti;
-    @BindView(R.id.donat)
+    @BindView(R.id.don)
     Button donat;
 
     @Override
@@ -21,11 +21,12 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
     }
-    @OnClick(R.id.panti)
+
+    @OnClick(R.id.pan)
     void pan(){
         startActivity(new Intent(this, Reg_P.class));
     }
-    @OnClick(R.id.donat)
+    @OnClick(R.id.don)
     void don(){
         startActivity(new Intent(this, Reg_D.class));
     }

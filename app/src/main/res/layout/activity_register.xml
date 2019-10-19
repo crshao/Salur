@@ -44,7 +44,7 @@
             />
 
         <Button
-            android:id="@+id/panti"
+            android:id="@+id/pan"
             android:layout_width="360dp"
             android:layout_height="90dp"
             android:background="@drawable/m_p"
@@ -53,12 +53,12 @@
             />
 
         <Button
-            android:id="@+id/donat"
+            android:id="@+id/don"
             android:layout_width="360dp"
             android:layout_height="90dp"
             android:background="@drawable/m_r"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/panti"
+            android:layout_below="@id/pan"
             android:layout_marginTop="20dp"
             />
 
