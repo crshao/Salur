@@ -35,7 +35,7 @@ public class Home extends AppCompatActivity {
                     break;
 
                 case R.id.cari:
-//                    fragment = new Cari();
+                    fragment = new Cari();
                     tag = "Cari";
                     break;
 
