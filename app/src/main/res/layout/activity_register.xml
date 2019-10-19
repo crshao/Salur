@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/Login"
+    android:background="@drawable/login"
     tools:context=".RegisterActivity">
 
 
@@ -13,7 +13,7 @@
             android:id="@+id/logo"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/Salur"
+            android:src="@drawable/banner"
             android:layout_centerHorizontal="true"
             />
 
@@ -47,7 +47,7 @@
             android:id="@+id/panti"
             android:layout_width="360dp"
             android:layout_height="90dp"
-            android:background="@drawable/M_p"
+            android:background="@drawable/m_p"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="340dp"
             />
@@ -56,7 +56,7 @@
             android:id="@+id/donat"
             android:layout_width="360dp"
             android:layout_height="90dp"
-            android:background="@drawable/M_r"
+            android:background="@drawable/m_r"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/panti"
             android:layout_marginTop="20dp"

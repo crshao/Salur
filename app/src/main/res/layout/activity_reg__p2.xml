@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/Login"
+    android:background="@drawable/login"
     tools:context=".Reg_P2">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/Salur"
+        android:src="@drawable/banner"
         android:layout_centerHorizontal="true"
         />
 
@@ -56,7 +56,7 @@
         android:layout_marginTop="70dp"
         android:layout_width="360dp"
         android:layout_height="60dp"
-        android:background="@drawable/Masuk"
+        android:background="@drawable/masuk"
         android:layout_below="@id/pic"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/source_sans_pro_bold"
