@@ -1,2 +1,2 @@
 # Salur
-Salur - membuat hidup lebih indah dan berarti
+Salur - terhubung dan tersalur
