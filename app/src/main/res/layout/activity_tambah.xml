@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Postingan Baru"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/tambah"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/kt"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/top"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/kt"
+        android:layout_marginLeft="155dp"
+        android:layout_below="@id/top"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/kt"
+        android:layout_marginLeft="280dp"
+        android:layout_below="@id/top"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/jud"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/kk"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tambah"
+        android:layout_marginTop="30dp"
+        android:hint="Judul"
+        android:paddingLeft="10dp"
+        />
+
+    <EditText
+        android:layout_below="@id/jud"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="@drawable/kb"
+        android:layout_centerHorizontal="true"
+        android:hint="Deskripsi postingan"
+        android:gravity="top"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/desc"
+    />
+
+    <Button
+        android:id="@+id/masuk"
+        android:layout_marginTop="25dp"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:background="@drawable/masuk"
+        android:layout_below="@id/desc"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:text="Post"
+        android:textSize="20dp"
+        android:paddingBottom="8dp"
+        android:textColor="#03658C"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>

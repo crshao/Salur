@@ -33,11 +33,13 @@
         android:id="@+id/username"
         android:layout_width="352dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
         android:layout_marginLeft="30dp"
         android:layout_below="@id/nama"
         android:inputType="textPersonName"
         android:textSize="20dp"
         android:backgroundTint="#FFFFFF"
+        android:textColor="@color/white"
         />
 
     <TextView
@@ -45,6 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@id/username"
         android:fontFamily="@font/source_sans_pro_extralight"
         android:text="Kata Sandi"
@@ -59,6 +62,7 @@
         android:layout_width="352dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="-10dp"
         android:layout_below="@id/kata"
         android:inputType="textPassword"
         android:textSize="20dp"
@@ -67,7 +71,7 @@
 
     <Button
         android:id="@+id/masuk"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:layout_width="360dp"
         android:layout_height="60dp"
         android:background="@drawable/masuk"
@@ -83,13 +87,14 @@
 
 
     <TextView
+        android:id="@+id/akun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/masuk"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
         android:fontFamily="@font/source_sans_pro_extralight"
-        android:text="Belum punya akun?                             "
+        android:text="Belum punya akun?"
         android:textColor="#FFFFFF"
         android:textSize="18dp" />
 
@@ -103,8 +108,8 @@
         android:fontFamily="@font/source_sans_pro_bold"
         android:textColor="#FFFFFF"
         android:textAllCaps="false"
-        android:layout_below="@id/masuk"
-        android:layout_marginTop="-2.5dp"
-        android:layout_marginLeft="228dp"
+        android:layout_below="@id/akun"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"
         />
 </RelativeLayout>
