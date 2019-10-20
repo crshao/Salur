@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prof_C_P">
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Profil"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/pant"
+        android:layout_below="@id/top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Panti Asuhan Sejahtera"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_below="@id/foto"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/don"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/donate"
+        android:layout_below="@id/nama"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="75dp"
+    />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/send"
+        android:layout_below="@id/nama"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="215dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/urgent"
+        android:layout_below="@id/don"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    tools:context=".Notif_1">
 
     <ImageView
         android:id="@+id/top"
@@ -26,13 +26,12 @@
         android:layout_marginLeft="10dp"
         />
 
-    <Button
-        android:id="@+id/a"
-        android:layout_width="350dp"
-        android:layout_height="150dp"
-        android:background="@drawable/cal"
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/u3"
         android:layout_below="@id/top"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"/>
+        />
 
 </RelativeLayout>

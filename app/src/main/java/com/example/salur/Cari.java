@@ -16,13 +16,26 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
+import butterknife.BindView;
+import butterknife.OnClick;
+
+
 public class Cari extends Fragment {
+    @BindView(R.id.mlg)
+    Button b1;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_cari,container,false);
         return view;
     }
+    @OnClick(R.id.mlg)
+    void mlg(){
+        startActivity(new Intent(getActivity() , C_mlg.class));
+    }
 }
+

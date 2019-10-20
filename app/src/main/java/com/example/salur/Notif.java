@@ -16,13 +16,21 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
+import butterknife.BindView;
+
 public class Notif extends Fragment {
+    @BindView(R.id.a)
+    Button b1;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_notif,container,false);
         return view;
+    }
+    void mlg(){
+        startActivity(new Intent(getActivity() , Notif_1.class));
     }
 }

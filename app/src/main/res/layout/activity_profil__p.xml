@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    tools:context=".Profil_P">
 
     <ImageView
         android:id="@+id/top"
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/source_sans_pro"
-        android:text="Notifikasi"
+        android:text="Profil"
         android:textSize="24dp"
         android:textColor="@color/black"
         android:textStyle="italic"
@@ -26,13 +26,35 @@
         android:layout_marginLeft="10dp"
         />
 
-    <Button
-        android:id="@+id/a"
-        android:layout_width="350dp"
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="150dp"
         android:layout_height="150dp"
-        android:background="@drawable/cal"
+        android:background="@drawable/pant"
         android:layout_below="@id/top"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Panti Asuhan Sejahtera"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_below="@id/foto"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/foto"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/urgent" />
 
 </RelativeLayout>

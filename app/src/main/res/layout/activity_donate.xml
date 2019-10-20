@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    tools:context=".Donate">
 
     <ImageView
         android:id="@+id/top"
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/source_sans_pro"
-        android:text="Notifikasi"
+        android:text="Kirim Donasi"
         android:textSize="24dp"
         android:textColor="@color/black"
         android:textStyle="italic"
@@ -26,13 +26,22 @@
         android:layout_marginLeft="10dp"
         />
 
-    <Button
-        android:id="@+id/a"
-        android:layout_width="350dp"
-        android:layout_height="150dp"
-        android:background="@drawable/cal"
+    <ImageView
+        android:id="@+id/urg"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/u2"
         android:layout_below="@id/top"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/now"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/now"
+        android:layout_below="@id/urg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="250dp"
+        />
 
 </RelativeLayout>
