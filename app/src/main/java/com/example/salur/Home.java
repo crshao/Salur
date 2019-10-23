@@ -40,17 +40,17 @@ public class Home extends AppCompatActivity {
                     break;
 
                 case R.id.tambah:
-//                    fragment = new Tambah();
+                    fragment = new Tambah();
                     tag = "Tambah";
                     break;
 
                 case R.id.notifikasi:
-//                    fragment = new Notif();
+                    fragment = new Notif();
                     tag = "Notif";
                     break;
 
                 case R.id.profil:
-//                    fragment = new Profil ()                                                          ;
+                    fragment = new Profil ()                                                          ;
                     tag = "Profil";
                     break;
             }

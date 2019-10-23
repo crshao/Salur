@@ -29,8 +29,6 @@ public class Beranda extends Fragment {
     @BindView(R.id.gerak)
     TextView xD;
 
-
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

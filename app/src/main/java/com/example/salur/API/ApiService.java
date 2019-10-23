@@ -1,10 +1,15 @@
 package com.example.salur.API;
 
 import com.example.salur.Models.AccessToken;
+import com.example.salur.Models.HomePostData;
+
+import java.util.ArrayList;
 
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
+import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 
 public interface ApiService {
@@ -25,4 +30,10 @@ public interface ApiService {
     @FormUrlEncoded
     Call<AccessToken> verify(@Field("login_pin") String pin,
                              @Field("username") String username);
+
+    @GET("getPostData")
+    Call<ArrayList<HomePostData>> getPostData();
+
+
+
 }
