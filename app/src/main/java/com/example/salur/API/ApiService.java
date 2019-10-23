@@ -38,8 +38,7 @@ public interface ApiService {
     @Multipart
     Call<DefaultResponse> post (MultipartBody.Part body,
                                 @Part("judul") String judul,
-                                @Part("deskripsi") String deskripsi,
-                                @Part("tanggal")String tanggal);
+                                @Part("deskripsi") String deskripsi);
 
     @GET("getPostData")
     Call<ArrayList<HomePostData>> getPostData();

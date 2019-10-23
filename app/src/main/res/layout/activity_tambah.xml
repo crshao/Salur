@@ -35,6 +35,16 @@
         android:layout_below="@id/top"
         android:layout_marginTop="30dp"
         />
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/kt"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/top"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        />
 
     <Button
         android:id="@+id/tambah2"
@@ -45,6 +55,16 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/kt" />
 
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/top"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/kt"
+        android:visibility="gone"/>
+
     <Button
         android:id="@+id/tambah3"
         android:layout_width="100dp"
@@ -53,6 +73,16 @@
         android:layout_marginLeft="280dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/kt" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/top"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/kt"
+        android:visibility="gone"/>
 
     <EditText
         android:id="@+id/jud"

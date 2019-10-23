@@ -20,6 +20,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 
@@ -31,6 +32,7 @@ public class Cari extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_cari,container,false);
+        ButterKnife.bind(this, view);
         return view;
     }
     @OnClick(R.id.mlg)
