@@ -1,6 +1,5 @@
 package com.example.salur;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -11,7 +10,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -39,7 +37,7 @@ public class Home extends AppCompatActivity {
                     tag = "Cari";
                     break;
 
-                case R.id.tambah:
+                case R.id.tambah1:
                     fragment = new Tambah();
                     tag = "Tambah";
                     break;

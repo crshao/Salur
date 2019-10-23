@@ -27,7 +27,7 @@
         />
 
     <Button
-        android:id="@+id/tambah"
+        android:id="@+id/tambah1"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@drawable/kt"
@@ -37,22 +37,22 @@
         />
 
     <Button
+        android:id="@+id/tambah2"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/kt"
-        android:layout_marginLeft="155dp"
         android:layout_below="@id/top"
+        android:layout_marginLeft="155dp"
         android:layout_marginTop="30dp"
-        />
+        android:background="@drawable/kt" />
 
     <Button
+        android:id="@+id/tambah3"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/kt"
-        android:layout_marginLeft="280dp"
         android:layout_below="@id/top"
+        android:layout_marginLeft="280dp"
         android:layout_marginTop="30dp"
-        />
+        android:background="@drawable/kt" />
 
     <EditText
         android:id="@+id/jud"
@@ -60,7 +60,7 @@
         android:layout_height="60dp"
         android:background="@drawable/kk"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/tambah"
+        android:layout_below="@id/tambah1"
         android:layout_marginTop="30dp"
         android:hint="Judul"
         android:paddingLeft="10dp"

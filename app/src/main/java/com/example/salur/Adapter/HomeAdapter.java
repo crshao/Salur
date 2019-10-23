@@ -48,7 +48,6 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeHolder> {
     public class HomeHolder extends RecyclerView.ViewHolder {
         //layout belum
 
-
         public HomeHolder(@NonNull View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);

@@ -12,7 +12,7 @@
         android:title="Cari"
         />
     <item
-        android:id="@+id/tambah"
+        android:id="@+id/tambah1"
         android:icon="@drawable/tambah"
         android:title="Tambah"
         />
