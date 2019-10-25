@@ -23,12 +23,12 @@ import retrofit2.Response;
 
 public class Reg_D extends AppCompatActivity {
 
-    private final static String TAG = "RegisterDonatur"
+    private final static String TAG = "RegisterDonatur";
 
     @BindView(R.id.dnext)
     Button b1;
 
-    @BindView(R.id.dnama)
+    @BindView(R.id.dname)
     EditText nama;
 
     @BindView(R.id.dusername)
@@ -73,7 +73,7 @@ public class Reg_D extends AppCompatActivity {
                     if(response.code() == 200)
                     {
                         tokenManager.saveToken(response.body());
-                        startActivity(new Intent(this, LoginActivity.class));
+                        startActivity(new Intent(Reg_D.this, LoginActivity.class));
                         finish();
                     }
                 }

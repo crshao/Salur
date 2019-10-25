@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class Prof_C_P extends AppCompatActivity {
 
@@ -17,6 +18,7 @@ public class Prof_C_P extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prof__p_c);
+        ButterKnife.bind(this);
     }
     void mlg(){
         startActivity(new Intent(this , Donate.class));

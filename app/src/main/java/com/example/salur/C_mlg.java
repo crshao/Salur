@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class C_mlg extends AppCompatActivity {
@@ -18,6 +19,7 @@ public class C_mlg extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_mlg);
+        ButterKnife.bind(this);
     }
 
     @OnClick(R.id.a)

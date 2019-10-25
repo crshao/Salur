@@ -24,6 +24,7 @@ import butterknife.BindView;
 public class Notif extends Fragment {
     @BindView(R.id.a)
     Button b1;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

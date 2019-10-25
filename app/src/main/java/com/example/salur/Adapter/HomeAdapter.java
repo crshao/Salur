@@ -40,8 +40,6 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeHolder> {
         final HomePostData homeData = homePostData.get(position);
         holder.judul.setText(homeData.getJudulPost());
         holder.desc.setText(homeData.getDeskripsiPost());
-
-        //layout belum dibuat
     }
 
     @Override
@@ -53,7 +51,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeHolder> {
         @BindView(R.id.judul)
         TextView judul;
 
-        @BindView(R.id.desc)
+        @BindView(R.id.description)
         TextView desc;
 
         @BindView(R.id.img_recycler)

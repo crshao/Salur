@@ -13,10 +13,9 @@ import butterknife.OnClick;
 public class RegisterActivity extends AppCompatActivity {
     private final static String TAG = "RegisterActivity";
 
-    @BindView(R.id.)
-
     @BindView(R.id.pan)
     Button panti;
+
     @BindView(R.id.don)
     Button donat;
 
