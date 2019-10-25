@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Prof_C_P">
+    tools:context=".ProfilPanti10Nopember">
 
     <ImageView
         android:id="@+id/top"
@@ -39,7 +39,7 @@
         android:id="@+id/nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Panti Asuhan Sejahtera"
+        android:text="Panti Asuhan 10 Nopember"
         android:fontFamily="@font/source_sans_pro_bold"
         android:textStyle="bold"
         android:textSize="25dp"
@@ -55,7 +55,7 @@
         android:layout_below="@id/nama"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="75dp"
-    />
+        />
 
     <Button
         android:layout_width="120dp"
@@ -65,23 +65,23 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="215dp"
         />
-    
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/don"
         android:scrollbars="none"
         android:layout_marginTop="20dp"
-            >
-            <RelativeLayout
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height = "wrap_content">
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height = "wrap_content">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="550dp"
-                    android:background="@drawable/Group_178"/>
+                android:layout_height="550dp"
+                android:background="@drawable/alikhsan"/>
 
-            </RelativeLayout>
-        </ScrollView>
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

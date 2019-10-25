@@ -20,6 +20,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class Notif extends Fragment {
     @BindView(R.id.a)
@@ -28,6 +29,7 @@ public class Notif extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        ButterKnife.bind(this);
         View view = inflater.inflate(R.layout.activity_notif,container,false);
         return view;
     }

@@ -20,6 +20,8 @@ public class Prof_C_P extends AppCompatActivity {
         setContentView(R.layout.activity_prof__p_c);
         ButterKnife.bind(this);
     }
+
+
     void mlg(){
         startActivity(new Intent(this , Donate.class));
     }

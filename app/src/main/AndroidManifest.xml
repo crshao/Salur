@@ -15,7 +15,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Notif_1"></activity>
+        <activity android:name=".ProfilPantiPondokKasih"></activity>
+        <activity android:name=".ProfilPantiAlIkhsan" />
+        <activity android:name=".ProfilPantiAlFatah" />
+        <activity android:name=".ProfilPantiAsuhanAmanah" />
+        <activity android:name=".ProfilPantiSantaYulia" />
+        <activity android:name=".ProfilPantiPenerusKasih" />
+        <activity android:name=".ProfilPantiPelayanKasih" />
+        <activity android:name=".ProfilPantiKaryaKasih" />
+        <activity android:name=".ProfilPanti10Nopember" />
+        <activity android:name=".ProfilPantiIbnuhajar" />
+        <activity android:name=".ProfilPantiAlmizan" />
+        <activity android:name=".ProfilPantiDiponegoro" />
+        <activity android:name=".Notif_1" />
         <activity android:name=".Profil_P" />
         <activity android:name=".Donate_K" />
         <activity android:name=".Donate" />
@@ -44,6 +56,7 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -51,7 +64,7 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
+                android:resource="@xml/provider_paths" />
         </provider>
     </application>
 
