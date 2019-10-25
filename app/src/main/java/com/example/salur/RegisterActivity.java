@@ -7,9 +7,13 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class RegisterActivity extends AppCompatActivity {
+    private final static String TAG = "RegisterActivity";
+
+    @BindView(R.id.)
 
     @BindView(R.id.pan)
     Button panti;
@@ -20,14 +24,16 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        ButterKnife.bind(this);
+
     }
 
     @OnClick(R.id.pan)
     void pan(){
-        startActivity(new Intent(this, Reg_P.class));
+        startActivity(new Intent(RegisterActivity.this, Reg_P.class));
     }
     @OnClick(R.id.don)
     void don(){
-        startActivity(new Intent(this, Reg_D.class));
+        startActivity(new Intent(RegisterActivity.this, Reg_D.class));
     }
 }

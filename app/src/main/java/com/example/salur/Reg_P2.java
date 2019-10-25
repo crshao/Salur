@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class Reg_P2 extends AppCompatActivity {
@@ -18,6 +19,7 @@ public class Reg_P2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg__p2);
+        ButterKnife.bind(this);
     }
 
     @OnClick(R.id.next)
