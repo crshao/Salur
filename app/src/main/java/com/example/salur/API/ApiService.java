@@ -1,5 +1,7 @@
 package com.example.salur.API;
 
+import android.widget.MultiAutoCompleteTextView;
+
 import com.example.salur.Manager.DefaultResponse;
 import com.example.salur.Models.AccessToken;
 import com.example.salur.Models.HomePostData;
@@ -36,13 +38,17 @@ public interface ApiService {
 
     @POST("post")
     @Multipart
-    Call<DefaultResponse> post (MultipartBody.Part body,
+    Call<DefaultResponse> post (@Part MultipartBody.Part body1,
+                                @Part MultipartBody.Part body2,
+                                @Part MultipartBody.Part body3,
                                 @Part("judul") String judul,
                                 @Part("deskripsi") String deskripsi);
 
     @GET("getPostData")
     Call<ArrayList<HomePostData>> getPostData();
 
+//    @GET('getPantiData')
+//    Call<ArrayList>
 
 
 }

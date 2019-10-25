@@ -38,6 +38,7 @@
 
     <TextView
         android:id="@+id/id"
+        android:layout_marginTop="10dp"
         android:layout_width="351dp"
         android:layout_height="wrap_content"
         android:text="Halo, Panti Asuhan Sejahtera"
@@ -50,7 +51,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/source_sans_pro_extralight"
+        android:fontFamily="@font/source_sans_pro"
         android:text="Siap untuk terhubung?"
         android:textSize="25dp"
         android:layout_below="@id/id"
@@ -71,5 +72,10 @@
         android:layout_below="@id/blue"
         android:layout_marginTop="5dp"
         />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHome"
+        android:layout_below="@+id/gerak"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"/>
 
 </RelativeLayout>

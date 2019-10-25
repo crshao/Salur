@@ -62,12 +62,15 @@ public class Tambah extends Fragment {
     private String imgPath1 = null;
     private String imgPath2 = null;
     private String imgPath3 = null;
+    private String imgPath = null;
     private Uri imageUri1, imageUri2, imageUri3;
     private File fo;
     private File mPhoto1, mPhoto2, mPhoto3;
     private Uri selectedImage;
     private Bitmap bitmap;
     private InputStream ims;
+    private MultipartBody.Part part1,part2,part3;
+    private RequestBody requestBody1,requestBody2, requestBody3;
 
 
     @BindView(R.id.tambah1)
@@ -129,17 +132,8 @@ public class Tambah extends Fragment {
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
             bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
 
-            if(imgPath1 != null)
-            {
-                imageUri1 = Uri.parse(imgPath1);
-                fo = new File(imageUri1.getPath());
-            }
-
-            if(imgPath2 != null)
-            {
-                imageUri2 = Uri.parse(imgPath2);
-
-            }
+            Uri imageUri = Uri.parse(imgPath);
+            File fo = new File(imageUri.getPath());
 
             Log.e("Activity", "Pick from Gallery::>>> ");
             try {
@@ -325,14 +319,16 @@ public class Tambah extends Fragment {
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         File image = new File(mediaStorageDir.getPath() + File.separator +
                 "IMG_"+ timeStamp + ".jpg");
-
+        imgPath = "file:" + image.getAbsolutePath();
         switch (id){
             case 1:
-                imgPath = "file:" + image.getAbsolutePath();
+                imgPath1 = imgPath;
                 break;
             case 2:
+                imgPath2 = imgPath;
                 break;
             case 3:
+                imgPath3 = imgPath;
                 break;
         }
 
@@ -350,47 +346,34 @@ public class Tambah extends Fragment {
         {
             imageUri1 = Uri.parse(imgPath1);
             mPhoto1 = new File(imageUri1.getPath());
+            requestBody1 = RequestBody.create(MediaType.parse("image/jpeg"),mPhoto1);
+            part1 = MultipartBody.Part.createFormData("img1",mPhoto1.getName(),requestBody1);
         }
 
         if(imgPath2 != null)
         {
             imageUri2 = Uri.parse(imgPath2);
             mPhoto2 = new File(imageUri2.getPath());
+            requestBody2 = RequestBody.create(MediaType.parse("image/jpeg"),mPhoto2);
+            part2 = MultipartBody.Part.createFormData("img2",mPhoto2.getName(),requestBody2);
         }
 
         if(imgPath3 != null)
         {
             imageUri3 = Uri.parse(imgPath3);
             mPhoto3 = new File(imageUri3.getPath());
+            requestBody3 = RequestBody.create(MediaType.parse("image/jpeg"),mPhoto3);
+            part3 = MultipartBody.Part.createFormData("img3",mPhoto3.getName(),requestBody3);
         }
 
-        Bitmap test = BitmapFactory.decodeFile(mPhoto.getPath());
-        int currWidth = test.getWidth();
-        int currHeight = test.getHeight();
 
-        if(currWidth>600 || currHeight>600){
-            Bitmap b2 = Bitmap.createScaledBitmap(test,600,600,false);
-            ByteArrayOutputStream outStream = new ByteArrayOutputStream();
-            b2.compress(Bitmap.CompressFormat.PNG,100,outStream);
-            File f = new File(imageUri.getPath());
-            try{
-                f.createNewFile();
-                FileOutputStream fo = new FileOutputStream(f);
-                fo.write(outStream.toByteArray());
-                fo.close();
-            }catch (IOException e){
-                e.printStackTrace();
-            }
-        }
 
-        RequestBody requestBody = RequestBody.create(MediaType.parse("image/jpeg"),mPhoto);
-        MultipartBody.Part part = MultipartBody.Part.createFormData("img",mPhoto.getName(),requestBody);
 
-        call = service.post(part, judul_post, deskripsi_post);
+        call = service.post(part1,part2,part3, judul_post, deskripsi_post);
         call.enqueue(new Callback<DefaultResponse>() {
             @Override
             public void onResponse(Call<DefaultResponse> call, Response<DefaultResponse> response) {
-                Log.w(TAG, "onResponse: " + response.body() + "Message: " + response.message() + response.code());
+                Log.w(TAG, "onResponse: " + response.raw());
                 if(response.isSuccessful())
                 {
                     if(response.code() == 200)

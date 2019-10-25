@@ -5,6 +5,7 @@ import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.salur.Home;
 import com.example.salur.Models.HomePostData;
@@ -14,6 +15,7 @@ import java.util.ArrayList;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeHolder> {
@@ -30,13 +32,15 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeHolder> {
     @NonNull
     @Override
     public HomeHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new HomeHolder(LayoutInflater.from(context).inflate(R.layout.test, parent, false));
+        return new HomeHolder(LayoutInflater.from(context).inflate(R.layout.home_data, parent, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull HomeHolder holder, int position) {
         final HomePostData homeData = homePostData.get(position);
-        //layout belum dibuat
+        holder.judul.setText(homeData.getJudulPost());
+        holder.desc.setText(homeData.getDeskripsiPost());
+
         //layout belum dibuat
     }
 
@@ -46,7 +50,14 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeHolder> {
     }
 
     public class HomeHolder extends RecyclerView.ViewHolder {
-        //layout belum
+        @BindView(R.id.judul)
+        TextView judul;
+
+        @BindView(R.id.desc)
+        TextView desc;
+
+        @BindView(R.id.img_recycler)
+        RecyclerView img_recycler;
 
         public HomeHolder(@NonNull View itemView) {
             super(itemView);
