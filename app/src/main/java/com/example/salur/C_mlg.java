@@ -14,6 +14,12 @@ public class C_mlg extends AppCompatActivity {
 
     @BindView(R.id.a)
     Button b1;
+    @BindView(R.id.b)
+    Button b2;
+    @BindView(R.id.c)
+    Button b3;
+    @BindView(R.id.d)
+    Button b4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,5 +31,15 @@ public class C_mlg extends AppCompatActivity {
     @OnClick(R.id.a)
     void mlg(){
         startActivity(new Intent(this , Prof_C_P.class));
+    }
+    @OnClick(R.id.b)
+    void mlg1(){ startActivity(new Intent(this , ProfilPantiDiponegoro.class)); }
+    @OnClick(R.id.c)
+    void mlg2(){
+        startActivity(new Intent(this , ProfilPantiIbnuhajar.class));
+    }
+    @OnClick(R.id.d)
+    void mlg3(){
+        startActivity(new Intent(this , ProfilPanti10Nopember.class));
     }
 }

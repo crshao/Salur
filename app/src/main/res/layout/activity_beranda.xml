@@ -38,10 +38,10 @@
 
     <TextView
         android:id="@+id/id"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_width="351dp"
         android:layout_height="wrap_content"
-        android:text="Halo, Panti Asuhan Sejahtera"
+        android:text="Halo, Calvin Wijaya"
         android:fontFamily="@font/source_sans_pro_bold"
         android:textColor="@color/black"
         android:textSize="32dp"
@@ -62,7 +62,7 @@
         android:id="@+id/gerak"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Telah selesai dibangun asrama Panti Asuhan Sumber Kasih di Surabaya. Klik untuk melihat ;djghisaodgasdlhgsaldkgbasdgbnaksdoghkasjdlgbsadghsl. "
+        android:text="Telah selesai dibangun asrama Panti Asuhan Sumber Kasih di Surabaya. Telah terkumpul 200 juta Rupiah untuk pembangunan asrama Panti Al-Kahfi , Panti Asuhan Al-Kahfi mengucapkan terima kasih kepada semua pihak yang telah berkontribusi"
         android:singleLine="true"
         android:ellipsize="marquee"
         android:marqueeRepeatLimit="marquee_forever"
@@ -75,6 +75,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerHome"
         android:layout_below="@+id/gerak"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"/>
 

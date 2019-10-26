@@ -48,16 +48,28 @@
         />
 
     <Button
-        android:id="@+id/don"
+        android:id="@+id/don1"
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:background="@drawable/donate"
         android:layout_below="@id/nama"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="75dp"
-    />
+        />
 
     <Button
+        android:id="@+id/don"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/relawan"
+        android:layout_below="@id/rel"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <Button
+        android:id="@+id/rel"
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:background="@drawable/send"
@@ -65,7 +77,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="215dp"
         />
-    
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -77,9 +89,10 @@
                 android:layout_width="match_parent"
                 android:layout_height = "wrap_content">
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="550dp"
-                    android:background="@drawable/Group_178"/>
+                    android:layout_width="351dp"
+                    android:layout_height="500dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/sejahtera"/>
 
             </RelativeLayout>
         </ScrollView>

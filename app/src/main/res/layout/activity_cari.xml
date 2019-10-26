@@ -136,6 +136,7 @@
                         />
 
                     <Button
+                        android:id="@+id/sby"
                         android:layout_marginTop="5dp"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
@@ -144,6 +145,7 @@
                         />
 
                     <Button
+                        android:id="@+id/bdg"
                         android:layout_marginTop="5dp"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
@@ -152,6 +154,7 @@
                         />
 
                     <Button
+                        android:id="@+id/jkt"
                         android:layout_marginTop="5dp"
                         android:layout_width="100dp"
                         android:layout_height="100dp"

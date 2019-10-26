@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfilPanti10Nopember">
+    tools:context=".ProfilPantiAsuhanAmanah">
 
     <ImageView
         android:id="@+id/top"
@@ -29,7 +29,7 @@
         android:id="@+id/foto"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:background="@drawable/pant"
+        android:background="@drawable/r9"
         android:layout_below="@id/top"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
@@ -39,7 +39,7 @@
         android:id="@+id/nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Panti Asuhan 10 Nopember"
+        android:text="Panti Asuhan Amanah"
         android:fontFamily="@font/source_sans_pro_bold"
         android:textStyle="bold"
         android:textSize="25dp"
@@ -48,7 +48,7 @@
         />
 
     <Button
-        android:id="@+id/don"
+        android:id="@+id/don1"
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:background="@drawable/donate"
@@ -58,6 +58,18 @@
         />
 
     <Button
+        android:id="@+id/don"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/relawan"
+        android:layout_below="@id/rel"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <Button
+        android:id="@+id/rel"
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:background="@drawable/send"
@@ -77,8 +89,9 @@
             android:layout_width="match_parent"
             android:layout_height = "wrap_content">
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="550dp"
+                android:layout_width="351dp"
+                android:layout_height="500dp"
+                android:layout_centerHorizontal="true"
                 android:background="@drawable/amanah"/>
 
         </RelativeLayout>

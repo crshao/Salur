@@ -21,6 +21,7 @@ import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class Profil extends Fragment {
 
@@ -30,11 +31,12 @@ public class Profil extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        ButterKnife.bind(this);
         View view = inflater.inflate(R.layout.activity_profil,container,false);
+        ButterKnife.bind(this, view);
         return view;
     }
 
+    @OnClick(R.id.edit)
     void mlg(){
         startActivity(new Intent(getActivity() , Profil_P.class));
     }

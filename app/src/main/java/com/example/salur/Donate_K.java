@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class Donate_K extends AppCompatActivity {
     @BindView(R.id.conf)
@@ -19,8 +20,9 @@ public class Donate_K extends AppCompatActivity {
         setContentView(R.layout.activity_donate__k);
         ButterKnife.bind(this);
     }
-
+    @OnClick(R.id.conf)
     void mlg(){
         startActivity(new Intent(this , Home.class));
+        finish();
     }
 }

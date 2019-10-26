@@ -27,10 +27,10 @@
         />
 
     <Button
-        android:id="@+id/a"
+        android:id="@+id/object"
         android:layout_width="350dp"
-        android:layout_height="150dp"
-        android:background="@drawable/cal"
+        android:layout_height="170dp"
+        android:background="@drawable/nfix"
         android:layout_below="@id/top"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"/>

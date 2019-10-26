@@ -56,8 +56,26 @@
         android:id="@+id/b"
         android:layout_width="359dp"
         android:layout_height="90dp"
-        android:background="@drawable/sejah1"
+        android:background="@drawable/g1"
         android:layout_below="@id/a"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/c"
+        android:layout_width="359dp"
+        android:layout_height="90dp"
+        android:background="@drawable/g2"
+        android:layout_below="@id/b"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/d"
+        android:layout_width="359dp"
+        android:layout_height="90dp"
+        android:background="@drawable/g3"
+        android:layout_below="@id/c"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"/>
 </RelativeLayout>

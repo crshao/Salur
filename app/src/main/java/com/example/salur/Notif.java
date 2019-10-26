@@ -21,18 +21,21 @@ import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class Notif extends Fragment {
-    @BindView(R.id.a)
+    @BindView(R.id.object)
     Button b1;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        ButterKnife.bind(this);
         View view = inflater.inflate(R.layout.activity_notif,container,false);
+        ButterKnife.bind(this, view);
         return view;
+
     }
+    @OnClick(R.id.object)
     void mlg(){
         startActivity(new Intent(getActivity() , Notif_1.class));
     }
